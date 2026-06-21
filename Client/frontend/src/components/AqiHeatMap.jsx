@@ -86,7 +86,7 @@ const AqiHeatMap = () => {
 
   return (
     <div className="rounded-lg shadow-md mx-10 mb-10 mt-10 p-4 border border-black bg-transparent">
-      <h2 className="text-xl font-bold mb-4">{selectedType} Scale</h2>
+      <h2 className="text-xl font-bold mb-4">{selectedType} Scale Dateline</h2>
       <div className="flex justify-between items-center mb-4">
         <div className="flex items-center space-x-4">
           <div className="flex items-center">

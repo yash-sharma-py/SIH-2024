@@ -4,7 +4,7 @@ import projectLogo from '../assets/project_logo.svg'
 function Navbar() {
   return (
     <>
-    <nav className="bg-transparent backdrop-blur-sm sticky top-0 left-0 right-0 z-50 flex justify-between items-center py-4 px-6">
+    <nav className="bg-transparent backdrop-blur-sm m-4 rounded-2xl sticky top-0 left-0 right-0 z-50 flex justify-between items-center py-4 px-6">
       <Link to='/'>
       <div className="text-gray-800 text-2xl border border-black p-2 font-semibold">VAYU-MITRA</div>
       {/* <div className=''><img className='' src={projectLogo} alt="" /></div> */}
@@ -14,15 +14,15 @@ function Navbar() {
         <li className='hover:text-gray-700 hover:font-bold text-lg cursor-pointer'>
           <Link to='/'>Home</Link> </li>
         <li className='hover:text-gray-700 hover:font-bold text-lg cursor-pointer'>
-          <Link to='history-no2'>NO2 History</Link> </li>
+          <Link to='history-no2 '>NO2 History</Link> </li>
         <li className='hover:text-gray-700 hover:font-bold text-lg cursor-pointer'>
         <Link to='aqi-heatmap'>AQI MAP</Link></li>
         <li className='hover:text-gray-700 hover:font-bold text-lg cursor-pointer'>
         <Link to='statistics'>Statistics</Link></li>
         <li className='hover:text-gray-700 hover:font-bold text-lg cursor-pointer'>
         <Link to='map'>Map</Link></li>
-        <li className='hover:text-gray-700 hover:font-bold text-lg cursor-pointer'>
-        <Link to='cmap'>ChloroMap</Link></li>
+        {/* <li className='hover:text-gray-700 hover:font-bold text-lg cursor-pointer'>
+        <Link to='cmap'>ChloroMap</Link></li> */}
         
       </ul>
       <div className="relative border border-gray-400 rounded-md  px-4 py-1">

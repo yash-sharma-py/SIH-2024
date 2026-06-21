@@ -45,10 +45,10 @@ const LeastPollutedCities = () => {
   ];
 
   return (
-    <div className="bg-white p-4 rounded-lg shadow-md w-full ">
+    <div className="bg-white p-4 rounded-lg shadow-md w-full  ">
       <h2 className="text-xl font-semibold mb-2">Least Polluted Cities in India</h2>
       <p className="text-sm text-gray-500 mb-4">Real Time Best city rankings</p>
-      <div className="flex items-center mb-4">
+      <div className="flex items-center mb-4 ">
         <select
           value={selectedRange}
           onChange={(e) => setSelectedRange(e.target.value)}

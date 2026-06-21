@@ -5,6 +5,10 @@ import './foliummap.css'; // Ensure this CSS file is correctly linked
 
 const FoliumMap = ({ no2Data }) => {
   return (
+    <>
+    <div className='flex justify-center items-center font-bold text-2xl'>
+      NO2 map 
+    </div>
     <div className='map-container'>
       {/* Center the map on India by default */}
       <MapContainer center={[20.5937, 78.9629]} zoom={5} style={{ height: '80vh', width: '80vw' }}>
@@ -14,12 +18,12 @@ const FoliumMap = ({ no2Data }) => {
         />
         {no2Data.map((data, index) => (
           <CircleMarker
-            key={index}
-            center={[data.lat, data.lon]}
-            radius={data.no2 / 10} // Scale radius for visualization
-            color='blue'
-            fillColor='blue'
-            fillOpacity={0.5}
+          key={index}
+          center={[data.lat, data.lon]}
+          radius={data.no2 / 10} // Scale radius for visualization
+          color='blue'
+          fillColor='blue'
+          fillOpacity={0.5}
           >
             <Popup>
               <div>
@@ -31,6 +35,7 @@ const FoliumMap = ({ no2Data }) => {
         ))}
       </MapContainer>
     </div>
+        </>
   );
 }
 

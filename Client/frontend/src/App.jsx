@@ -6,8 +6,9 @@ import AQIHeatMap from './components/AqiHeatMap.jsx';
 import HistoryNO2Component from './components/HistoryNO2.jsx';
 import StartPage from './components/StartPage.jsx';
 import FoliumMap from './components/FoliumMap.jsx';
-import FoliumChoroplethMap from './components/FOliumChloroplethMap.jsx';
+// import FoliumChoroplethMap from './components/FoliumChloroplethMap.jsx';
 import StatBoxes3 from './components/statistics/StatBoxes3.jsx'
+// import ChloroplethMap from './components/ChloroplethMap.jsx';
 function App() {
   const no2DataDist = [
     { district: 'Mumbai', no2: 25 },
@@ -41,7 +42,7 @@ function App() {
     <Router>
       <div className="flex flex-col justify-center">
         <Navbar className='z-50' />
-        <div className='border border-gray-500'></div>
+
 
         <Routes>  {/* Use Routes instead of Switch for React Router v6 */}
           
@@ -49,13 +50,13 @@ function App() {
           {/* <Route path="/" element={<Map />} /> */}
           <Route path="/statistics" element={
           <div className="flex gap-8 p-6">
-          <StatBoxes2 />
+          <StatBoxes2  />
           <StatBoxes3 />
         </div> } />
           <Route path="/history-no2" element={<HistoryNO2Component />} />
           <Route path="/aqi-heatmap" element={<AQIHeatMap />} />
           <Route path="/map" element={<FoliumMap no2Data={no2Data} />} />
-          {/* <Route path="/cmap" element={<FoliumChoroplethMap no2DataDist={no2DataDist} geoJsonData={geojsonData} />} /> */}
+          {/* <Route path="/cmap" element={<ChloroplethMap no2DataDist={no2DataDist} geoJsonData={geojsonData} />} /> */}
           
         </Routes>
       </div>
